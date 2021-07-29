@@ -1,0 +1,353 @@
+/* Applies to all */
+*{
+    margin: 0;
+    padding: 0;
+    font-family: 'Poppins', sans-serif;
+}
+
+/* Applies to header area */
+.header{
+    min-height: 100vh;
+    width: 100%;
+    background-image: linear-gradient(rgba(4,9,30,0.7),rgba(4,9,30,0.7)),url(images/cover.jpg);
+    background-position: center;
+    background-size: cover;
+    position: relative;
+}
+
+nav{
+    display: flex;
+    padding: 2% 6%;
+    justify-content: space-between;
+    align-items: center;
+}
+nav img{
+    width: 150px;
+}
+
+.nav-links{
+    flex: 1;
+    text-align: right;
+}
+
+.nav-links ul li{
+    list-style: none;
+    display: inline-block;
+    padding: 8px 12px;
+    position: relative;
+}
+
+.nav-links ul li a{
+    color: #fff;
+    text-decoration: none;
+    font-size: 13px;
+}
+.nav-links ul li::after{
+    content:'';
+    width: 0%;
+    height: 2px;
+    background: #f44336;
+    display: block;
+    margin: auto;
+    transition: 0.5s;
+}
+.nav-links ul li:hover::after{
+    width: 100%;
+    
+}
+
+.text-box{
+    width: 90%;
+    color: #fff;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    text-align: center;
+}
+
+.text-box h1{
+    font-size: 62px;
+}
+.text-box p{
+    margin: 10px 0 40px;
+    font-size: 14px;
+    color: #fff
+}
+
+.hero-btn{
+    display: inline-block;
+    text-decoration: none;
+    color: #fff;
+    border: 1px solid #fff;
+    padding: 12px 34px;
+    font-size: 13px;
+    background: transparent;
+    position: relative;
+    cursor: pointer;
+}
+.hero-btn:hover{
+    border: 1px solid #f44336;
+    background: #f44336;
+    transition: 1s;
+}
+
+nav .fa{
+    display: none;
+}
+
+.nav-links{
+    display: none;
+}
+
+/* Applies to quote area */
+
+.contents{
+    min-height: 100vh;
+    width: 100%;
+    margin: auto;
+    padding-top: 100px;
+    text-align: center;
+    background-image: linear-gradient(rgba(4,9,30,0.7),rgba(4,9,30,0.7)),url(images/banner.jpg);
+    background-position: center;
+    background-size: cover;
+    position: relative;
+    color: white;
+}
+
+.OuterBox{
+    width: 80%;
+    border-style: solid;
+    border-width: 2px;
+    border-color: gray;
+    border-radius: 10px;
+    border-bottom-right-radius: 0px;
+    padding: 12px 34px;
+    margin-top: 0px;
+    margin: 60px;
+    height: 300;
+    position:relative;
+    transition: 0.5s;
+    float: bottom;
+}
+.left{
+    height: 200px;
+    margin-left: 5px;
+    margin-right: 5px;
+    border-radius: 5%;
+    position: absolute;
+    left: 0%
+}
+
+.right{
+    height: 200px;
+    margin-left: 5px;
+    margin-right: 5px;
+    border-radius: 5%;
+    position: absolute;
+    right: 0%
+}
+
+.OuterBox:hover {
+    border-color: black;
+    transition: 0.5s;
+}
+
+.fullContent{
+    display: none;
+}
+
+.OuterBox:hover .fullContent{
+    display: block;
+    transition: 0.5s;
+}
+
+.OuterBox .textContent h1{
+    color: white;
+}
+
+#myBtn {
+    display: none;
+    position: fixed;
+    bottom: 20px;
+    right: 30px;
+    z-index: 99;
+    font-size: 18px;
+    border: none;
+    outline: none;
+    background-color: red;
+    color: white;
+    cursor: pointer;
+    padding: 15px;
+    border-radius: 4px;
+}
+
+#myBtn:hover {
+    background-color: #555;
+}
+
+.collapsible {
+    background-color: #eee;
+    color: #444;
+    cursor: pointer;
+    padding: 18px;
+    width: 100%;
+    border: none;
+    text-align: left;
+    outline: none;
+    font-size: 15px;
+  }
+  
+  /* Add a background color to the button if it is clicked on (add the .active class with JS), and when you move the mouse over it (hover) */
+.active, .collapsible:hover {
+background-color: #ccc;
+  }
+  
+  /* Style the collapsible content. Note: hidden by default */
+
+.content {
+  padding: 0 18px;
+  background-color: white;
+  max-height: 0;
+  overflow: hidden;
+  transition: max-height 0.2s ease-out;
+}  
+
+#expand{
+    display: none;
+}
+
+#collapse{
+    display: block;
+    position: absolute;
+    top: -500px;
+    left: -30px;
+    background-color: transparent;
+    border: 1;
+    border-radius: 5px;
+}
+
+.collapsible:after {
+    content: '\02795'; /* Unicode character for "plus" sign (+) */
+    font-size: 13px;
+    color: white;
+    float: right;
+    margin-left: 5px;
+  }
+  
+  .active:after {
+    content: "\2796"; /* Unicode character for "minus" sign (-) */
+  }
+
+
+  .controls {
+    text-align: right;
+    margin-bottom: 1em;
+   }
+   
+   .controls li {
+     display: inline;
+   }
+   
+   button {
+     background: #000;
+     color: #fff;
+     border: 0;
+     font-size: 0.85rem;
+     border-radius: 0.25rem;
+   }
+   
+   /*
+   Custom elements are inline by default
+   */
+   toggle-section {
+     display: block;
+   }
+   
+   /*
+   Only applies if script runs and 
+   `role="region"` is added
+   */
+   toggle-section[role="region"] {
+     border-width: 2px 0;
+     border-style: solid;
+   }
+   
+   toggle-section[role="region"] + toggle-section {
+     border-top: 0;
+   }
+/* Applies to mobile devices */
+
+@media(max-width: 700px){
+    .header{
+        min-height: 100vh;
+        width: 100%;
+        background-image: linear-gradient(rgba(4,9,30,0.7),rgba(4,9,30,0.7)),url(images/mobilecover.jpg);
+        background-position: center;
+        background-size: cover;
+        position: relative;
+    }
+    .text-box h1{
+        font-size: 20px;
+    }
+    .OuterBox h1{
+        font-size: 20px;
+    }
+    .nav-links ul li{
+        display: block;
+    }
+    .nav-links{
+        position: absolute;
+        background: #f44336;
+        height: 100vh;
+        width: 200px;
+        top: 0;
+        right: -200px;
+        text-align: left;
+        z-index: 2;
+        transition: 1s;
+    }
+    nav .fa{
+        display: block;
+        color: #fff;
+        margin: 10px;
+        font-size: 22px;
+        cursor: pointer;
+    }
+    .nav-links ul{
+        padding: 30px;
+    }
+    .OuterBox{
+        width: 80%;
+        height: 200px;
+        margin-left: 0;
+    }
+    .OuterBox:hover {
+        border-color: black;
+        height: 1000px;
+        transition: 0.5s;
+        margin-left: 0px;
+    }
+    .fullContent{
+        position: relative;
+        transform: translateY(100px);
+        display: none;
+        transition: 0.5s;
+    }
+    .OuterBox:hover .fullContent{
+        display: block;
+        transition: 0.5s;
+    }
+    img{
+        max-width: 35%;
+        height: auto;
+    }
+    .textContent h1{
+        position: absolute;
+        transform: translateY(-70px)
+    }
+    .textContent h5{
+        position: absolute;
+        transform: translateY(-45px)
+    }
+}

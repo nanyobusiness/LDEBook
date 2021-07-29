@@ -1,0 +1,814 @@
+<!DOCTYPE html>
+<!-- imports and references to components -->
+<html>
+<head>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>This is the title</title>
+    <script src="myscripts.js"></script>
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;600;700&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@5.15.3/css/fontawesome.min.css">
+</head>
+<body>
+    <button onclick="topFunction()" id="myBtn" title="Go to top">Top</button>
+    <!-- Header  -->
+    <section class="header">
+        <nav>
+            <a href="index.html"><img src="images/logo.png"></a>
+            <div class="nav-links" id="navLinks">
+                <i class="fa fa-times" onClick="hideMenu()"></i>
+                <ul>
+                    <li><a href="">Contact</a></li>
+                </ul>
+            </div>
+            <i class="fa fa-bars" onclick="showMenu()"></i>
+        </nav>
+
+<div class="text-box">
+    <h1>Main photobook Title</h1>
+    <p>Information about photobook</p>
+    <a href="" class="hero-btn">extra text that can be linked to a site</a>
+</div>
+
+</section>
+<!-- Photobook Pictures -->
+<section class="contents">
+    <h1>Student Photobook</h1>
+    <p>More text i guess if u wanna elaborate</p>
+    <br><br>
+
+
+
+
+<div class="OuterBox">
+    <img class="left" src="images/user1.jpg" width="150" height="160">
+    <img class="right" src="images/meme.jpg" width="150" height="160">
+    <div class="textContent">
+    <h1>Jeffrey Bezos</h3>
+    <h5>CEO, entrepreneur, born in 1964<h5>
+        <br><br><br><br><br><br><br><br>
+    <div class="fullContent">
+      <p>Yearbook Quote goes here<br><br><br></p>
+        <toggle-section open="false">
+            <h2 id="section-1">Favourite Quarantine Binge</h2>
+            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam non lectus sit amet nunc facilisis molestie. Praesent quis libero et mauris facilisis dignissim at sed nisi.</p> 
+            <p>Nullam efficitur porttitor lectus, ac finibus nibh fermentum ac. Phasellus aliquam, nibh non efficitur pharetra, tellus diam posuere lectus, a consequat elit ex nec ligula.</p>
+          </toggle-section>
+          <toggle-section open="false">
+            <h2 id="section-2">Favourite Anime</h2>
+            <p>Aliquam erat volutpat. Nulla facilisi. Nunc porttitor, elit non eleifend aliquam, est leo scelerisque nibh, nec faucibus odio urna ac nulla.</p> 
+            <p>Maecenas laoreet in metus eget convallis. Vivamus at eleifend felis. Proin non vehicula neque. Etiam eleifend sapien ut nulla malesuada, ac condimentum nisl efficitur.</p>
+          </toggle-section>
+          <toggle-section open="false">
+            <h2 id="section-3">Favourite meme</h2>
+            <p>Aliquam erat volutpat. Nulla facilisi. Nunc porttitor, elit non eleifend aliquam, est leo scelerisque nibh, nec faucibus odio urna ac nulla.</p> 
+            <p>Maecenas laoreet in metus eget convallis. Vivamus at eleifend felis. Proin non vehicula neque. Etiam eleifend sapien ut nulla malesuada, ac condimentum nisl efficitur.</p>
+          </toggle-section>
+          <toggle-section open="false">
+            <h2 id="section-4">Favourite Project & Pictures</h2>
+            <p>Aliquam erat volutpat. Nulla facilisi. Nunc porttitor, elit non eleifend aliquam, est leo scelerisque nibh, nec faucibus odio urna ac nulla.</p> 
+            <p>Maecenas laoreet in metus eget convallis. Vivamus at eleifend felis. Proin non vehicula neque. Etiam eleifend sapien ut nulla malesuada, ac condimentum nisl efficitur.</p>
+          </toggle-section>
+          <toggle-section open="false">
+            <h2 id="section-5">Favourite Society</h2>
+            <p>Aliquam erat volutpat. Nulla facilisi. Nunc porttitor, elit non eleifend aliquam, est leo scelerisque nibh, nec faucibus odio urna ac nulla.</p> 
+            <p>Maecenas laoreet in metus eget convallis. Vivamus at eleifend felis. Proin non vehicula neque. Etiam eleifend sapien ut nulla malesuada, ac condimentum nisl efficitur.</p>
+          </toggle-section>
+          <toggle-section open="false">
+            <h2 id="section-6">Android or Apple?</h2>
+            <p>Aliquam erat volutpat. Nulla facilisi. Nunc porttitor, elit non eleifend aliquam, est leo scelerisque nibh, nec faucibus odio urna ac nulla.</p> 
+            <p>Maecenas laoreet in metus eget convallis. Vivamus at eleifend felis. Proin non vehicula neque. Etiam eleifend sapien ut nulla malesuada, ac condimentum nisl efficitur.</p>
+          </toggle-section>
+    </div>
+    </div>
+</div>
+
+
+<div class="OuterBox">
+  <img class="left" src="images/user1.jpg" width="150" height="160">
+  <img class="right" src="images/meme.jpg" width="150" height="160">
+  <div class="textContent">
+  <h1>Jeffrey Bezos</h3>
+  <h5>CEO, entrepreneur, born in 1964<h5>
+      <br><br><br><br><br><br><br><br>
+  <div class="fullContent">
+    <p>Yearbook Quote goes here<br><br><br></p>
+      <toggle-section open="false">
+          <h2 id="section-1">Favourite Quarantine Binge</h2>
+          <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam non lectus sit amet nunc facilisis molestie. Praesent quis libero et mauris facilisis dignissim at sed nisi.</p> 
+          <p>Nullam efficitur porttitor lectus, ac finibus nibh fermentum ac. Phasellus aliquam, nibh non efficitur pharetra, tellus diam posuere lectus, a consequat elit ex nec ligula.</p>
+        </toggle-section>
+        <toggle-section open="false">
+          <h2 id="section-2">Favourite Anime</h2>
+          <p>Aliquam erat volutpat. Nulla facilisi. Nunc porttitor, elit non eleifend aliquam, est leo scelerisque nibh, nec faucibus odio urna ac nulla.</p> 
+          <p>Maecenas laoreet in metus eget convallis. Vivamus at eleifend felis. Proin non vehicula neque. Etiam eleifend sapien ut nulla malesuada, ac condimentum nisl efficitur.</p>
+        </toggle-section>
+        <toggle-section open="false">
+          <h2 id="section-3">Favourite meme</h2>
+          <p>Aliquam erat volutpat. Nulla facilisi. Nunc porttitor, elit non eleifend aliquam, est leo scelerisque nibh, nec faucibus odio urna ac nulla.</p> 
+          <p>Maecenas laoreet in metus eget convallis. Vivamus at eleifend felis. Proin non vehicula neque. Etiam eleifend sapien ut nulla malesuada, ac condimentum nisl efficitur.</p>
+        </toggle-section>
+        <toggle-section open="false">
+          <h2 id="section-4">Favourite Project & Pictures</h2>
+          <p>Aliquam erat volutpat. Nulla facilisi. Nunc porttitor, elit non eleifend aliquam, est leo scelerisque nibh, nec faucibus odio urna ac nulla.</p> 
+          <p>Maecenas laoreet in metus eget convallis. Vivamus at eleifend felis. Proin non vehicula neque. Etiam eleifend sapien ut nulla malesuada, ac condimentum nisl efficitur.</p>
+        </toggle-section>
+        <toggle-section open="false">
+          <h2 id="section-5">Favourite Society</h2>
+          <p>Aliquam erat volutpat. Nulla facilisi. Nunc porttitor, elit non eleifend aliquam, est leo scelerisque nibh, nec faucibus odio urna ac nulla.</p> 
+          <p>Maecenas laoreet in metus eget convallis. Vivamus at eleifend felis. Proin non vehicula neque. Etiam eleifend sapien ut nulla malesuada, ac condimentum nisl efficitur.</p>
+        </toggle-section>
+        <toggle-section open="false">
+          <h2 id="section-6">Android or Apple?</h2>
+          <p>Aliquam erat volutpat. Nulla facilisi. Nunc porttitor, elit non eleifend aliquam, est leo scelerisque nibh, nec faucibus odio urna ac nulla.</p> 
+          <p>Maecenas laoreet in metus eget convallis. Vivamus at eleifend felis. Proin non vehicula neque. Etiam eleifend sapien ut nulla malesuada, ac condimentum nisl efficitur.</p>
+        </toggle-section>
+  </div>
+  </div>
+</div>
+
+
+<div class="OuterBox">
+  <img class="left" src="images/user1.jpg" width="150" height="160">
+  <img class="right" src="images/meme.jpg" width="150" height="160">
+  <div class="textContent">
+  <h1>Jeffrey Bezos</h3>
+  <h5>CEO, entrepreneur, born in 1964<h5>
+      <br><br><br><br><br><br><br><br>
+  <div class="fullContent">
+    <p>Yearbook Quote goes here<br><br><br></p>
+      <toggle-section open="false">
+          <h2 id="section-1">Favourite Quarantine Binge</h2>
+          <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam non lectus sit amet nunc facilisis molestie. Praesent quis libero et mauris facilisis dignissim at sed nisi.</p> 
+          <p>Nullam efficitur porttitor lectus, ac finibus nibh fermentum ac. Phasellus aliquam, nibh non efficitur pharetra, tellus diam posuere lectus, a consequat elit ex nec ligula.</p>
+        </toggle-section>
+        <toggle-section open="false">
+          <h2 id="section-2">Favourite Anime</h2>
+          <p>Aliquam erat volutpat. Nulla facilisi. Nunc porttitor, elit non eleifend aliquam, est leo scelerisque nibh, nec faucibus odio urna ac nulla.</p> 
+          <p>Maecenas laoreet in metus eget convallis. Vivamus at eleifend felis. Proin non vehicula neque. Etiam eleifend sapien ut nulla malesuada, ac condimentum nisl efficitur.</p>
+        </toggle-section>
+        <toggle-section open="false">
+          <h2 id="section-3">Favourite meme</h2>
+          <p>Aliquam erat volutpat. Nulla facilisi. Nunc porttitor, elit non eleifend aliquam, est leo scelerisque nibh, nec faucibus odio urna ac nulla.</p> 
+          <p>Maecenas laoreet in metus eget convallis. Vivamus at eleifend felis. Proin non vehicula neque. Etiam eleifend sapien ut nulla malesuada, ac condimentum nisl efficitur.</p>
+        </toggle-section>
+        <toggle-section open="false">
+          <h2 id="section-4">Favourite Project & Pictures</h2>
+          <p>Aliquam erat volutpat. Nulla facilisi. Nunc porttitor, elit non eleifend aliquam, est leo scelerisque nibh, nec faucibus odio urna ac nulla.</p> 
+          <p>Maecenas laoreet in metus eget convallis. Vivamus at eleifend felis. Proin non vehicula neque. Etiam eleifend sapien ut nulla malesuada, ac condimentum nisl efficitur.</p>
+        </toggle-section>
+        <toggle-section open="false">
+          <h2 id="section-5">Favourite Society</h2>
+          <p>Aliquam erat volutpat. Nulla facilisi. Nunc porttitor, elit non eleifend aliquam, est leo scelerisque nibh, nec faucibus odio urna ac nulla.</p> 
+          <p>Maecenas laoreet in metus eget convallis. Vivamus at eleifend felis. Proin non vehicula neque. Etiam eleifend sapien ut nulla malesuada, ac condimentum nisl efficitur.</p>
+        </toggle-section>
+        <toggle-section open="false">
+          <h2 id="section-6">Android or Apple?</h2>
+          <p>Aliquam erat volutpat. Nulla facilisi. Nunc porttitor, elit non eleifend aliquam, est leo scelerisque nibh, nec faucibus odio urna ac nulla.</p> 
+          <p>Maecenas laoreet in metus eget convallis. Vivamus at eleifend felis. Proin non vehicula neque. Etiam eleifend sapien ut nulla malesuada, ac condimentum nisl efficitur.</p>
+        </toggle-section>
+  </div>
+  </div>
+</div>
+
+
+<div class="OuterBox">
+  <img class="left" src="images/user1.jpg" width="150" height="160">
+  <img class="right" src="images/meme.jpg" width="150" height="160">
+  <div class="textContent">
+  <h1>Jeffrey Bezos</h3>
+  <h5>CEO, entrepreneur, born in 1964<h5>
+      <br><br><br><br><br><br><br><br>
+  <div class="fullContent">
+    <p>Yearbook Quote goes here<br><br><br></p>
+      <toggle-section open="false">
+          <h2 id="section-1">Favourite Quarantine Binge</h2>
+          <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam non lectus sit amet nunc facilisis molestie. Praesent quis libero et mauris facilisis dignissim at sed nisi.</p> 
+          <p>Nullam efficitur porttitor lectus, ac finibus nibh fermentum ac. Phasellus aliquam, nibh non efficitur pharetra, tellus diam posuere lectus, a consequat elit ex nec ligula.</p>
+        </toggle-section>
+        <toggle-section open="false">
+          <h2 id="section-2">Favourite Anime</h2>
+          <p>Aliquam erat volutpat. Nulla facilisi. Nunc porttitor, elit non eleifend aliquam, est leo scelerisque nibh, nec faucibus odio urna ac nulla.</p> 
+          <p>Maecenas laoreet in metus eget convallis. Vivamus at eleifend felis. Proin non vehicula neque. Etiam eleifend sapien ut nulla malesuada, ac condimentum nisl efficitur.</p>
+        </toggle-section>
+        <toggle-section open="false">
+          <h2 id="section-3">Favourite meme</h2>
+          <p>Aliquam erat volutpat. Nulla facilisi. Nunc porttitor, elit non eleifend aliquam, est leo scelerisque nibh, nec faucibus odio urna ac nulla.</p> 
+          <p>Maecenas laoreet in metus eget convallis. Vivamus at eleifend felis. Proin non vehicula neque. Etiam eleifend sapien ut nulla malesuada, ac condimentum nisl efficitur.</p>
+        </toggle-section>
+        <toggle-section open="false">
+          <h2 id="section-4">Favourite Project & Pictures</h2>
+          <p>Aliquam erat volutpat. Nulla facilisi. Nunc porttitor, elit non eleifend aliquam, est leo scelerisque nibh, nec faucibus odio urna ac nulla.</p> 
+          <p>Maecenas laoreet in metus eget convallis. Vivamus at eleifend felis. Proin non vehicula neque. Etiam eleifend sapien ut nulla malesuada, ac condimentum nisl efficitur.</p>
+        </toggle-section>
+        <toggle-section open="false">
+          <h2 id="section-5">Favourite Society</h2>
+          <p>Aliquam erat volutpat. Nulla facilisi. Nunc porttitor, elit non eleifend aliquam, est leo scelerisque nibh, nec faucibus odio urna ac nulla.</p> 
+          <p>Maecenas laoreet in metus eget convallis. Vivamus at eleifend felis. Proin non vehicula neque. Etiam eleifend sapien ut nulla malesuada, ac condimentum nisl efficitur.</p>
+        </toggle-section>
+        <toggle-section open="false">
+          <h2 id="section-6">Android or Apple?</h2>
+          <p>Aliquam erat volutpat. Nulla facilisi. Nunc porttitor, elit non eleifend aliquam, est leo scelerisque nibh, nec faucibus odio urna ac nulla.</p> 
+          <p>Maecenas laoreet in metus eget convallis. Vivamus at eleifend felis. Proin non vehicula neque. Etiam eleifend sapien ut nulla malesuada, ac condimentum nisl efficitur.</p>
+        </toggle-section>
+  </div>
+  </div>
+</div>
+
+
+<div class="OuterBox">
+  <img class="left" src="images/user1.jpg" width="150" height="160">
+  <img class="right" src="images/meme.jpg" width="150" height="160">
+  <div class="textContent">
+  <h1>Jeffrey Bezos</h3>
+  <h5>CEO, entrepreneur, born in 1964<h5>
+      <br><br><br><br><br><br><br><br>
+  <div class="fullContent">
+    <p>Yearbook Quote goes here<br><br><br></p>
+      <toggle-section open="false">
+          <h2 id="section-1">Favourite Quarantine Binge</h2>
+          <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam non lectus sit amet nunc facilisis molestie. Praesent quis libero et mauris facilisis dignissim at sed nisi.</p> 
+          <p>Nullam efficitur porttitor lectus, ac finibus nibh fermentum ac. Phasellus aliquam, nibh non efficitur pharetra, tellus diam posuere lectus, a consequat elit ex nec ligula.</p>
+        </toggle-section>
+        <toggle-section open="false">
+          <h2 id="section-2">Favourite Anime</h2>
+          <p>Aliquam erat volutpat. Nulla facilisi. Nunc porttitor, elit non eleifend aliquam, est leo scelerisque nibh, nec faucibus odio urna ac nulla.</p> 
+          <p>Maecenas laoreet in metus eget convallis. Vivamus at eleifend felis. Proin non vehicula neque. Etiam eleifend sapien ut nulla malesuada, ac condimentum nisl efficitur.</p>
+        </toggle-section>
+        <toggle-section open="false">
+          <h2 id="section-3">Favourite meme</h2>
+          <p>Aliquam erat volutpat. Nulla facilisi. Nunc porttitor, elit non eleifend aliquam, est leo scelerisque nibh, nec faucibus odio urna ac nulla.</p> 
+          <p>Maecenas laoreet in metus eget convallis. Vivamus at eleifend felis. Proin non vehicula neque. Etiam eleifend sapien ut nulla malesuada, ac condimentum nisl efficitur.</p>
+        </toggle-section>
+        <toggle-section open="false">
+          <h2 id="section-4">Favourite Project & Pictures</h2>
+          <p>Aliquam erat volutpat. Nulla facilisi. Nunc porttitor, elit non eleifend aliquam, est leo scelerisque nibh, nec faucibus odio urna ac nulla.</p> 
+          <p>Maecenas laoreet in metus eget convallis. Vivamus at eleifend felis. Proin non vehicula neque. Etiam eleifend sapien ut nulla malesuada, ac condimentum nisl efficitur.</p>
+        </toggle-section>
+        <toggle-section open="false">
+          <h2 id="section-5">Favourite Society</h2>
+          <p>Aliquam erat volutpat. Nulla facilisi. Nunc porttitor, elit non eleifend aliquam, est leo scelerisque nibh, nec faucibus odio urna ac nulla.</p> 
+          <p>Maecenas laoreet in metus eget convallis. Vivamus at eleifend felis. Proin non vehicula neque. Etiam eleifend sapien ut nulla malesuada, ac condimentum nisl efficitur.</p>
+        </toggle-section>
+        <toggle-section open="false">
+          <h2 id="section-6">Android or Apple?</h2>
+          <p>Aliquam erat volutpat. Nulla facilisi. Nunc porttitor, elit non eleifend aliquam, est leo scelerisque nibh, nec faucibus odio urna ac nulla.</p> 
+          <p>Maecenas laoreet in metus eget convallis. Vivamus at eleifend felis. Proin non vehicula neque. Etiam eleifend sapien ut nulla malesuada, ac condimentum nisl efficitur.</p>
+        </toggle-section>
+  </div>
+  </div>
+</div>
+
+
+<div class="OuterBox">
+  <img class="left" src="images/user1.jpg" width="150" height="160">
+  <img class="right" src="images/meme.jpg" width="150" height="160">
+  <div class="textContent">
+  <h1>Jeffrey Bezos</h3>
+  <h5>CEO, entrepreneur, born in 1964<h5>
+      <br><br><br><br><br><br><br><br>
+  <div class="fullContent">
+    <p>Yearbook Quote goes here<br><br><br></p>
+      <toggle-section open="false">
+          <h2 id="section-1">Favourite Quarantine Binge</h2>
+          <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam non lectus sit amet nunc facilisis molestie. Praesent quis libero et mauris facilisis dignissim at sed nisi.</p> 
+          <p>Nullam efficitur porttitor lectus, ac finibus nibh fermentum ac. Phasellus aliquam, nibh non efficitur pharetra, tellus diam posuere lectus, a consequat elit ex nec ligula.</p>
+        </toggle-section>
+        <toggle-section open="false">
+          <h2 id="section-2">Favourite Anime</h2>
+          <p>Aliquam erat volutpat. Nulla facilisi. Nunc porttitor, elit non eleifend aliquam, est leo scelerisque nibh, nec faucibus odio urna ac nulla.</p> 
+          <p>Maecenas laoreet in metus eget convallis. Vivamus at eleifend felis. Proin non vehicula neque. Etiam eleifend sapien ut nulla malesuada, ac condimentum nisl efficitur.</p>
+        </toggle-section>
+        <toggle-section open="false">
+          <h2 id="section-3">Favourite meme</h2>
+          <p>Aliquam erat volutpat. Nulla facilisi. Nunc porttitor, elit non eleifend aliquam, est leo scelerisque nibh, nec faucibus odio urna ac nulla.</p> 
+          <p>Maecenas laoreet in metus eget convallis. Vivamus at eleifend felis. Proin non vehicula neque. Etiam eleifend sapien ut nulla malesuada, ac condimentum nisl efficitur.</p>
+        </toggle-section>
+        <toggle-section open="false">
+          <h2 id="section-4">Favourite Project & Pictures</h2>
+          <p>Aliquam erat volutpat. Nulla facilisi. Nunc porttitor, elit non eleifend aliquam, est leo scelerisque nibh, nec faucibus odio urna ac nulla.</p> 
+          <p>Maecenas laoreet in metus eget convallis. Vivamus at eleifend felis. Proin non vehicula neque. Etiam eleifend sapien ut nulla malesuada, ac condimentum nisl efficitur.</p>
+        </toggle-section>
+        <toggle-section open="false">
+          <h2 id="section-5">Favourite Society</h2>
+          <p>Aliquam erat volutpat. Nulla facilisi. Nunc porttitor, elit non eleifend aliquam, est leo scelerisque nibh, nec faucibus odio urna ac nulla.</p> 
+          <p>Maecenas laoreet in metus eget convallis. Vivamus at eleifend felis. Proin non vehicula neque. Etiam eleifend sapien ut nulla malesuada, ac condimentum nisl efficitur.</p>
+        </toggle-section>
+        <toggle-section open="false">
+          <h2 id="section-6">Android or Apple?</h2>
+          <p>Aliquam erat volutpat. Nulla facilisi. Nunc porttitor, elit non eleifend aliquam, est leo scelerisque nibh, nec faucibus odio urna ac nulla.</p> 
+          <p>Maecenas laoreet in metus eget convallis. Vivamus at eleifend felis. Proin non vehicula neque. Etiam eleifend sapien ut nulla malesuada, ac condimentum nisl efficitur.</p>
+        </toggle-section>
+  </div>
+  </div>
+</div>
+
+
+<div class="OuterBox">
+  <img class="left" src="images/user1.jpg" width="150" height="160">
+  <img class="right" src="images/meme.jpg" width="150" height="160">
+  <div class="textContent">
+  <h1>Jeffrey Bezos</h3>
+  <h5>CEO, entrepreneur, born in 1964<h5>
+      <br><br><br><br><br><br><br><br>
+  <div class="fullContent">
+    <p>Yearbook Quote goes here<br><br><br></p>
+      <toggle-section open="false">
+          <h2 id="section-1">Favourite Quarantine Binge</h2>
+          <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam non lectus sit amet nunc facilisis molestie. Praesent quis libero et mauris facilisis dignissim at sed nisi.</p> 
+          <p>Nullam efficitur porttitor lectus, ac finibus nibh fermentum ac. Phasellus aliquam, nibh non efficitur pharetra, tellus diam posuere lectus, a consequat elit ex nec ligula.</p>
+        </toggle-section>
+        <toggle-section open="false">
+          <h2 id="section-2">Favourite Anime</h2>
+          <p>Aliquam erat volutpat. Nulla facilisi. Nunc porttitor, elit non eleifend aliquam, est leo scelerisque nibh, nec faucibus odio urna ac nulla.</p> 
+          <p>Maecenas laoreet in metus eget convallis. Vivamus at eleifend felis. Proin non vehicula neque. Etiam eleifend sapien ut nulla malesuada, ac condimentum nisl efficitur.</p>
+        </toggle-section>
+        <toggle-section open="false">
+          <h2 id="section-3">Favourite meme</h2>
+          <p>Aliquam erat volutpat. Nulla facilisi. Nunc porttitor, elit non eleifend aliquam, est leo scelerisque nibh, nec faucibus odio urna ac nulla.</p> 
+          <p>Maecenas laoreet in metus eget convallis. Vivamus at eleifend felis. Proin non vehicula neque. Etiam eleifend sapien ut nulla malesuada, ac condimentum nisl efficitur.</p>
+        </toggle-section>
+        <toggle-section open="false">
+          <h2 id="section-4">Favourite Project & Pictures</h2>
+          <p>Aliquam erat volutpat. Nulla facilisi. Nunc porttitor, elit non eleifend aliquam, est leo scelerisque nibh, nec faucibus odio urna ac nulla.</p> 
+          <p>Maecenas laoreet in metus eget convallis. Vivamus at eleifend felis. Proin non vehicula neque. Etiam eleifend sapien ut nulla malesuada, ac condimentum nisl efficitur.</p>
+        </toggle-section>
+        <toggle-section open="false">
+          <h2 id="section-5">Favourite Society</h2>
+          <p>Aliquam erat volutpat. Nulla facilisi. Nunc porttitor, elit non eleifend aliquam, est leo scelerisque nibh, nec faucibus odio urna ac nulla.</p> 
+          <p>Maecenas laoreet in metus eget convallis. Vivamus at eleifend felis. Proin non vehicula neque. Etiam eleifend sapien ut nulla malesuada, ac condimentum nisl efficitur.</p>
+        </toggle-section>
+        <toggle-section open="false">
+          <h2 id="section-6">Android or Apple?</h2>
+          <p>Aliquam erat volutpat. Nulla facilisi. Nunc porttitor, elit non eleifend aliquam, est leo scelerisque nibh, nec faucibus odio urna ac nulla.</p> 
+          <p>Maecenas laoreet in metus eget convallis. Vivamus at eleifend felis. Proin non vehicula neque. Etiam eleifend sapien ut nulla malesuada, ac condimentum nisl efficitur.</p>
+        </toggle-section>
+  </div>
+  </div>
+</div>
+
+
+<div class="OuterBox">
+  <img class="left" src="images/user1.jpg" width="150" height="160">
+  <img class="right" src="images/meme.jpg" width="150" height="160">
+  <div class="textContent">
+  <h1>Jeffrey Bezos</h3>
+  <h5>CEO, entrepreneur, born in 1964<h5>
+      <br><br><br><br><br><br><br><br>
+  <div class="fullContent">
+    <p>Yearbook Quote goes here<br><br><br></p>
+      <toggle-section open="false">
+          <h2 id="section-1">Favourite Quarantine Binge</h2>
+          <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam non lectus sit amet nunc facilisis molestie. Praesent quis libero et mauris facilisis dignissim at sed nisi.</p> 
+          <p>Nullam efficitur porttitor lectus, ac finibus nibh fermentum ac. Phasellus aliquam, nibh non efficitur pharetra, tellus diam posuere lectus, a consequat elit ex nec ligula.</p>
+        </toggle-section>
+        <toggle-section open="false">
+          <h2 id="section-2">Favourite Anime</h2>
+          <p>Aliquam erat volutpat. Nulla facilisi. Nunc porttitor, elit non eleifend aliquam, est leo scelerisque nibh, nec faucibus odio urna ac nulla.</p> 
+          <p>Maecenas laoreet in metus eget convallis. Vivamus at eleifend felis. Proin non vehicula neque. Etiam eleifend sapien ut nulla malesuada, ac condimentum nisl efficitur.</p>
+        </toggle-section>
+        <toggle-section open="false">
+          <h2 id="section-3">Favourite meme</h2>
+          <p>Aliquam erat volutpat. Nulla facilisi. Nunc porttitor, elit non eleifend aliquam, est leo scelerisque nibh, nec faucibus odio urna ac nulla.</p> 
+          <p>Maecenas laoreet in metus eget convallis. Vivamus at eleifend felis. Proin non vehicula neque. Etiam eleifend sapien ut nulla malesuada, ac condimentum nisl efficitur.</p>
+        </toggle-section>
+        <toggle-section open="false">
+          <h2 id="section-4">Favourite Project & Pictures</h2>
+          <p>Aliquam erat volutpat. Nulla facilisi. Nunc porttitor, elit non eleifend aliquam, est leo scelerisque nibh, nec faucibus odio urna ac nulla.</p> 
+          <p>Maecenas laoreet in metus eget convallis. Vivamus at eleifend felis. Proin non vehicula neque. Etiam eleifend sapien ut nulla malesuada, ac condimentum nisl efficitur.</p>
+        </toggle-section>
+        <toggle-section open="false">
+          <h2 id="section-5">Favourite Society</h2>
+          <p>Aliquam erat volutpat. Nulla facilisi. Nunc porttitor, elit non eleifend aliquam, est leo scelerisque nibh, nec faucibus odio urna ac nulla.</p> 
+          <p>Maecenas laoreet in metus eget convallis. Vivamus at eleifend felis. Proin non vehicula neque. Etiam eleifend sapien ut nulla malesuada, ac condimentum nisl efficitur.</p>
+        </toggle-section>
+        <toggle-section open="false">
+          <h2 id="section-6">Android or Apple?</h2>
+          <p>Aliquam erat volutpat. Nulla facilisi. Nunc porttitor, elit non eleifend aliquam, est leo scelerisque nibh, nec faucibus odio urna ac nulla.</p> 
+          <p>Maecenas laoreet in metus eget convallis. Vivamus at eleifend felis. Proin non vehicula neque. Etiam eleifend sapien ut nulla malesuada, ac condimentum nisl efficitur.</p>
+        </toggle-section>
+  </div>
+  </div>
+</div>
+
+
+<div class="OuterBox">
+  <img class="left" src="images/user1.jpg" width="150" height="160">
+  <img class="right" src="images/meme.jpg" width="150" height="160">
+  <div class="textContent">
+  <h1>Jeffrey Bezos</h3>
+  <h5>CEO, entrepreneur, born in 1964<h5>
+      <br><br><br><br><br><br><br><br>
+  <div class="fullContent">
+    <p>Yearbook Quote goes here<br><br><br></p>
+      <toggle-section open="false">
+          <h2 id="section-1">Favourite Quarantine Binge</h2>
+          <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam non lectus sit amet nunc facilisis molestie. Praesent quis libero et mauris facilisis dignissim at sed nisi.</p> 
+          <p>Nullam efficitur porttitor lectus, ac finibus nibh fermentum ac. Phasellus aliquam, nibh non efficitur pharetra, tellus diam posuere lectus, a consequat elit ex nec ligula.</p>
+        </toggle-section>
+        <toggle-section open="false">
+          <h2 id="section-2">Favourite Anime</h2>
+          <p>Aliquam erat volutpat. Nulla facilisi. Nunc porttitor, elit non eleifend aliquam, est leo scelerisque nibh, nec faucibus odio urna ac nulla.</p> 
+          <p>Maecenas laoreet in metus eget convallis. Vivamus at eleifend felis. Proin non vehicula neque. Etiam eleifend sapien ut nulla malesuada, ac condimentum nisl efficitur.</p>
+        </toggle-section>
+        <toggle-section open="false">
+          <h2 id="section-3">Favourite meme</h2>
+          <p>Aliquam erat volutpat. Nulla facilisi. Nunc porttitor, elit non eleifend aliquam, est leo scelerisque nibh, nec faucibus odio urna ac nulla.</p> 
+          <p>Maecenas laoreet in metus eget convallis. Vivamus at eleifend felis. Proin non vehicula neque. Etiam eleifend sapien ut nulla malesuada, ac condimentum nisl efficitur.</p>
+        </toggle-section>
+        <toggle-section open="false">
+          <h2 id="section-4">Favourite Project & Pictures</h2>
+          <p>Aliquam erat volutpat. Nulla facilisi. Nunc porttitor, elit non eleifend aliquam, est leo scelerisque nibh, nec faucibus odio urna ac nulla.</p> 
+          <p>Maecenas laoreet in metus eget convallis. Vivamus at eleifend felis. Proin non vehicula neque. Etiam eleifend sapien ut nulla malesuada, ac condimentum nisl efficitur.</p>
+        </toggle-section>
+        <toggle-section open="false">
+          <h2 id="section-5">Favourite Society</h2>
+          <p>Aliquam erat volutpat. Nulla facilisi. Nunc porttitor, elit non eleifend aliquam, est leo scelerisque nibh, nec faucibus odio urna ac nulla.</p> 
+          <p>Maecenas laoreet in metus eget convallis. Vivamus at eleifend felis. Proin non vehicula neque. Etiam eleifend sapien ut nulla malesuada, ac condimentum nisl efficitur.</p>
+        </toggle-section>
+        <toggle-section open="false">
+          <h2 id="section-6">Android or Apple?</h2>
+          <p>Aliquam erat volutpat. Nulla facilisi. Nunc porttitor, elit non eleifend aliquam, est leo scelerisque nibh, nec faucibus odio urna ac nulla.</p> 
+          <p>Maecenas laoreet in metus eget convallis. Vivamus at eleifend felis. Proin non vehicula neque. Etiam eleifend sapien ut nulla malesuada, ac condimentum nisl efficitur.</p>
+        </toggle-section>
+  </div>
+  </div>
+</div>
+
+
+<div class="OuterBox">
+  <img class="left" src="images/user1.jpg" width="150" height="160">
+  <img class="right" src="images/meme.jpg" width="150" height="160">
+  <div class="textContent">
+  <h1>Jeffrey Bezos</h3>
+  <h5>CEO, entrepreneur, born in 1964<h5>
+      <br><br><br><br><br><br><br><br>
+  <div class="fullContent">
+    <p>Yearbook Quote goes here<br><br><br></p>
+      <toggle-section open="false">
+          <h2 id="section-1">Favourite Quarantine Binge</h2>
+          <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam non lectus sit amet nunc facilisis molestie. Praesent quis libero et mauris facilisis dignissim at sed nisi.</p> 
+          <p>Nullam efficitur porttitor lectus, ac finibus nibh fermentum ac. Phasellus aliquam, nibh non efficitur pharetra, tellus diam posuere lectus, a consequat elit ex nec ligula.</p>
+        </toggle-section>
+        <toggle-section open="false">
+          <h2 id="section-2">Favourite Anime</h2>
+          <p>Aliquam erat volutpat. Nulla facilisi. Nunc porttitor, elit non eleifend aliquam, est leo scelerisque nibh, nec faucibus odio urna ac nulla.</p> 
+          <p>Maecenas laoreet in metus eget convallis. Vivamus at eleifend felis. Proin non vehicula neque. Etiam eleifend sapien ut nulla malesuada, ac condimentum nisl efficitur.</p>
+        </toggle-section>
+        <toggle-section open="false">
+          <h2 id="section-3">Favourite meme</h2>
+          <p>Aliquam erat volutpat. Nulla facilisi. Nunc porttitor, elit non eleifend aliquam, est leo scelerisque nibh, nec faucibus odio urna ac nulla.</p> 
+          <p>Maecenas laoreet in metus eget convallis. Vivamus at eleifend felis. Proin non vehicula neque. Etiam eleifend sapien ut nulla malesuada, ac condimentum nisl efficitur.</p>
+        </toggle-section>
+        <toggle-section open="false">
+          <h2 id="section-4">Favourite Project & Pictures</h2>
+          <p>Aliquam erat volutpat. Nulla facilisi. Nunc porttitor, elit non eleifend aliquam, est leo scelerisque nibh, nec faucibus odio urna ac nulla.</p> 
+          <p>Maecenas laoreet in metus eget convallis. Vivamus at eleifend felis. Proin non vehicula neque. Etiam eleifend sapien ut nulla malesuada, ac condimentum nisl efficitur.</p>
+        </toggle-section>
+        <toggle-section open="false">
+          <h2 id="section-5">Favourite Society</h2>
+          <p>Aliquam erat volutpat. Nulla facilisi. Nunc porttitor, elit non eleifend aliquam, est leo scelerisque nibh, nec faucibus odio urna ac nulla.</p> 
+          <p>Maecenas laoreet in metus eget convallis. Vivamus at eleifend felis. Proin non vehicula neque. Etiam eleifend sapien ut nulla malesuada, ac condimentum nisl efficitur.</p>
+        </toggle-section>
+        <toggle-section open="false">
+          <h2 id="section-6">Android or Apple?</h2>
+          <p>Aliquam erat volutpat. Nulla facilisi. Nunc porttitor, elit non eleifend aliquam, est leo scelerisque nibh, nec faucibus odio urna ac nulla.</p> 
+          <p>Maecenas laoreet in metus eget convallis. Vivamus at eleifend felis. Proin non vehicula neque. Etiam eleifend sapien ut nulla malesuada, ac condimentum nisl efficitur.</p>
+        </toggle-section>
+  </div>
+  </div>
+</div>
+
+
+<div class="OuterBox">
+  <img class="left" src="images/user1.jpg" width="150" height="160">
+  <img class="right" src="images/meme.jpg" width="150" height="160">
+  <div class="textContent">
+  <h1>Jeffrey Bezos</h3>
+  <h5>CEO, entrepreneur, born in 1964<h5>
+      <br><br><br><br><br><br><br><br>
+  <div class="fullContent">
+    <p>Yearbook Quote goes here<br><br><br></p>
+      <toggle-section open="false">
+          <h2 id="section-1">Favourite Quarantine Binge</h2>
+          <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam non lectus sit amet nunc facilisis molestie. Praesent quis libero et mauris facilisis dignissim at sed nisi.</p> 
+          <p>Nullam efficitur porttitor lectus, ac finibus nibh fermentum ac. Phasellus aliquam, nibh non efficitur pharetra, tellus diam posuere lectus, a consequat elit ex nec ligula.</p>
+        </toggle-section>
+        <toggle-section open="false">
+          <h2 id="section-2">Favourite Anime</h2>
+          <p>Aliquam erat volutpat. Nulla facilisi. Nunc porttitor, elit non eleifend aliquam, est leo scelerisque nibh, nec faucibus odio urna ac nulla.</p> 
+          <p>Maecenas laoreet in metus eget convallis. Vivamus at eleifend felis. Proin non vehicula neque. Etiam eleifend sapien ut nulla malesuada, ac condimentum nisl efficitur.</p>
+        </toggle-section>
+        <toggle-section open="false">
+          <h2 id="section-3">Favourite meme</h2>
+          <p>Aliquam erat volutpat. Nulla facilisi. Nunc porttitor, elit non eleifend aliquam, est leo scelerisque nibh, nec faucibus odio urna ac nulla.</p> 
+          <p>Maecenas laoreet in metus eget convallis. Vivamus at eleifend felis. Proin non vehicula neque. Etiam eleifend sapien ut nulla malesuada, ac condimentum nisl efficitur.</p>
+        </toggle-section>
+        <toggle-section open="false">
+          <h2 id="section-4">Favourite Project & Pictures</h2>
+          <p>Aliquam erat volutpat. Nulla facilisi. Nunc porttitor, elit non eleifend aliquam, est leo scelerisque nibh, nec faucibus odio urna ac nulla.</p> 
+          <p>Maecenas laoreet in metus eget convallis. Vivamus at eleifend felis. Proin non vehicula neque. Etiam eleifend sapien ut nulla malesuada, ac condimentum nisl efficitur.</p>
+        </toggle-section>
+        <toggle-section open="false">
+          <h2 id="section-5">Favourite Society</h2>
+          <p>Aliquam erat volutpat. Nulla facilisi. Nunc porttitor, elit non eleifend aliquam, est leo scelerisque nibh, nec faucibus odio urna ac nulla.</p> 
+          <p>Maecenas laoreet in metus eget convallis. Vivamus at eleifend felis. Proin non vehicula neque. Etiam eleifend sapien ut nulla malesuada, ac condimentum nisl efficitur.</p>
+        </toggle-section>
+        <toggle-section open="false">
+          <h2 id="section-6">Android or Apple?</h2>
+          <p>Aliquam erat volutpat. Nulla facilisi. Nunc porttitor, elit non eleifend aliquam, est leo scelerisque nibh, nec faucibus odio urna ac nulla.</p> 
+          <p>Maecenas laoreet in metus eget convallis. Vivamus at eleifend felis. Proin non vehicula neque. Etiam eleifend sapien ut nulla malesuada, ac condimentum nisl efficitur.</p>
+        </toggle-section>
+  </div>
+  </div>
+</div>
+
+
+<div class="OuterBox">
+  <img class="left" src="images/user1.jpg" width="150" height="160">
+  <img class="right" src="images/meme.jpg" width="150" height="160">
+  <div class="textContent">
+  <h1>Jeffrey Bezos</h3>
+  <h5>CEO, entrepreneur, born in 1964<h5>
+      <br><br><br><br><br><br><br><br>
+  <div class="fullContent">
+    <p>Yearbook Quote goes here<br><br><br></p>
+      <toggle-section open="false">
+          <h2 id="section-1">Favourite Quarantine Binge</h2>
+          <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam non lectus sit amet nunc facilisis molestie. Praesent quis libero et mauris facilisis dignissim at sed nisi.</p> 
+          <p>Nullam efficitur porttitor lectus, ac finibus nibh fermentum ac. Phasellus aliquam, nibh non efficitur pharetra, tellus diam posuere lectus, a consequat elit ex nec ligula.</p>
+        </toggle-section>
+        <toggle-section open="false">
+          <h2 id="section-2">Favourite Anime</h2>
+          <p>Aliquam erat volutpat. Nulla facilisi. Nunc porttitor, elit non eleifend aliquam, est leo scelerisque nibh, nec faucibus odio urna ac nulla.</p> 
+          <p>Maecenas laoreet in metus eget convallis. Vivamus at eleifend felis. Proin non vehicula neque. Etiam eleifend sapien ut nulla malesuada, ac condimentum nisl efficitur.</p>
+        </toggle-section>
+        <toggle-section open="false">
+          <h2 id="section-3">Favourite meme</h2>
+          <p>Aliquam erat volutpat. Nulla facilisi. Nunc porttitor, elit non eleifend aliquam, est leo scelerisque nibh, nec faucibus odio urna ac nulla.</p> 
+          <p>Maecenas laoreet in metus eget convallis. Vivamus at eleifend felis. Proin non vehicula neque. Etiam eleifend sapien ut nulla malesuada, ac condimentum nisl efficitur.</p>
+        </toggle-section>
+        <toggle-section open="false">
+          <h2 id="section-4">Favourite Project & Pictures</h2>
+          <p>Aliquam erat volutpat. Nulla facilisi. Nunc porttitor, elit non eleifend aliquam, est leo scelerisque nibh, nec faucibus odio urna ac nulla.</p> 
+          <p>Maecenas laoreet in metus eget convallis. Vivamus at eleifend felis. Proin non vehicula neque. Etiam eleifend sapien ut nulla malesuada, ac condimentum nisl efficitur.</p>
+        </toggle-section>
+        <toggle-section open="false">
+          <h2 id="section-5">Favourite Society</h2>
+          <p>Aliquam erat volutpat. Nulla facilisi. Nunc porttitor, elit non eleifend aliquam, est leo scelerisque nibh, nec faucibus odio urna ac nulla.</p> 
+          <p>Maecenas laoreet in metus eget convallis. Vivamus at eleifend felis. Proin non vehicula neque. Etiam eleifend sapien ut nulla malesuada, ac condimentum nisl efficitur.</p>
+        </toggle-section>
+        <toggle-section open="false">
+          <h2 id="section-6">Android or Apple?</h2>
+          <p>Aliquam erat volutpat. Nulla facilisi. Nunc porttitor, elit non eleifend aliquam, est leo scelerisque nibh, nec faucibus odio urna ac nulla.</p> 
+          <p>Maecenas laoreet in metus eget convallis. Vivamus at eleifend felis. Proin non vehicula neque. Etiam eleifend sapien ut nulla malesuada, ac condimentum nisl efficitur.</p>
+        </toggle-section>
+  </div>
+  </div>
+</div>
+
+
+
+
+
+</section>
+
+<!-- JavaScript for Toggle Menu & Buttons-->
+<script>
+// Open Menu Button
+var navLinks = document.getElementById("navLinks")
+
+function showMenu() {
+    navLinks.style.display = "block"
+    setTimeout(function(){
+        navLinks.style.right = "0";
+    }, 50)
+    
+}
+function hideMenu() {
+    navLinks.style.right = "-200px";
+    setTimeout(function(){
+        navLinks.style.display = "none"
+    }, 650)
+    
+}
+//Scroll to top buttons
+
+var mybutton = document.getElementById("myBtn");
+
+window.onscroll = function() {scrollFunction()};
+
+function scrollFunction() {
+  if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
+    mybutton.style.display = "block";
+  } else {
+    mybutton.style.display = "none";
+  }
+}
+
+function topFunction() {
+  document.body.scrollTop = 0;
+  document.documentElement.scrollTop = 0;
+}
+
+
+//Collapsible
+
+var coll = document.getElementsByClassName("collapsible");
+var i;
+
+for (i = 0; i < coll.length; i++) {
+  coll[i].addEventListener("click", function() {
+    this.classList.toggle("active");
+    var content = this.nextElementSibling;
+    if (content.style.maxHeight){
+      content.style.maxHeight = null;
+    } else {
+      content.style.maxHeight = content.scrollHeight + "px";
+    }
+  });
+}
+
+(function() {
+  // Check for <template> support
+  if ('content' in document.createElement('template')) {
+    const tmpl = document.createElement('template')
+
+    // Create the web component's template
+    // featuring a <slot> for the Light DOM content
+    tmpl.innerHTML = `
+      <h2>
+        <button aria-expanded="false">
+          <svg aria-hidden="true" focusable="false" viewBox="0 0 10 10">
+            <rect class="vert" height="8" width="2" y="1" x="4"/>
+            <rect height="2" width="8" y="4" x="1"/>
+          </svg>
+        </button>
+      </h2>
+      <div class="content" hidden>
+        <slot></slot>
+      </div>
+      <style>
+        h2 {
+          margin: 0;
+        }
+
+        h2 button {
+          all: inherit;
+          box-sizing: border-box;
+          display: flex;
+          justify-content: space-between;
+          width: 100%;
+          padding: 0.5em 0;
+        }
+
+        h2 button:focus svg {
+          outline: 2px solid;
+        }
+
+        button svg {
+          height: 1em;
+          margin-left: 0.5em;
+        }
+
+        [aria-expanded="true"] .vert {
+          display: none;
+        }
+
+        [aria-expanded] rect {
+          fill: currentColor;
+        }
+      </style>
+    `
+    // Check for latest Shadow DOM syntax support
+    if (document.head.attachShadow) {
+      class ToggleSection extends HTMLElement {
+        constructor() {
+          super()
+
+          // Make the host element a region
+          this.setAttribute('role', 'region')
+
+          // Create a `shadowRoot` and populate from template 
+          this.attachShadow({ mode: 'open' })
+          this.shadowRoot.appendChild(tmpl.content.cloneNode(true))
+
+          // Assign the toggle button
+          this.btn = this.shadowRoot.querySelector('h2 button')
+
+          // Get the first element in Light DOM
+          const oldHeading = this.querySelector(':first-child')
+          // and cast its heading level (which should, but may not, exist)
+          let level = parseInt(oldHeading.tagName.substr(1))
+          // Then take its `id` (may be null)
+          let id = oldHeading.id
+
+          // Get the Shadow DOM <h2>
+          this.heading = this.shadowRoot.querySelector('h2')
+          
+          // If `id` exists, apply it
+          if (id) {
+            this.heading.id = id
+          }
+          
+          // If there is no level, there is no heading.
+          // Add a warning.
+          if (!level) {
+            console.warn('The first element inside each <toggle-section> should be a heading of an appropriate level.')
+          }
+          
+          // If the level is a real integer but not 2
+          // set `aria-level` accordingly
+          if (level && level !== 2) {
+            this.heading.setAttribute('aria-level', level)
+          }
+
+          // Add the Light DOM heading label to the innerHTML of the toggle button
+          // and remove the now unwanted Light DOM heading
+          this.btn.innerHTML = oldHeading.textContent + this.btn.innerHTML
+          oldHeading.parentNode.removeChild(oldHeading)
+
+          // The main state switching function
+          this.switchState = () => {
+            let expanded = this.getAttribute('open') === 'true' || false
+
+            // Toggle `aria-expanded`
+            this.btn.setAttribute('aria-expanded', expanded)
+            // Toggle the `.content` element's visibility
+            this.shadowRoot.querySelector('.content').hidden = !expanded
+          }
+
+          this.btn.onclick = () => { 
+            // Change the component's `open` attribute value on click
+            let open = this.getAttribute('open') === 'true' || false
+            this.setAttribute('open', open ? 'false' : 'true')
+            
+            // Update the hash if the collapsible section's 
+            // heading has an `id` and we are opening, not closing
+            if (this.heading.id && !open) {
+              history.pushState(null, null, '#' + this.heading.id)
+            }
+          }
+        }
+        
+        connectedCallback() {
+          if (window.location.hash.substr(1) === this.heading.id) {
+            this.setAttribute('open', 'true')
+            this.btn.focus()
+          } 
+        }
+
+        // Identify just the `open` attribute as an observed attribute
+        static get observedAttributes() {
+          return ['open']
+        }
+
+        // When `open` changes value, execute switchState()
+        attributeChangedCallback(name) {
+          if (name === 'open') {
+            this.switchState()
+          }
+        }
+      }
+
+      // Add our new custom element to the window for use
+      window.customElements.define('toggle-section', ToggleSection) 
+    
+      // Define the expand/collapse all template
+      const buttons = document.createElement('div')
+      buttons.innerHTML = `
+        <ul class="controls" aria-label="section controls">
+          <li><button id="expand">expand all</button></li>
+          <li><button id="collapse">collapse all</button></li>
+        </ul>
+        `
+
+      // Get the first `toggle-section` on the page
+      // and all toggle sections as a node list
+      const first = document.querySelector('toggle-section')
+      const all = document.querySelectorAll('toggle-section')
+
+      // Insert the button controls before the first <toggle-section>
+      first.parentNode.insertBefore(buttons, first)
+
+      // Place the click on the parent <ul>...
+      buttons.addEventListener('click', (e) => {
+        // ...then determine which button was the target 
+        let expand = e.target.id === 'expand' ? true : false
+
+        // Iterate over the toggle sections to switch
+        // each one's state uniformly
+        Array.prototype.forEach.call(all, (t) => {
+          t.setAttribute('open', expand)
+        })
+      })
+    }
+  }
+})()
+</script>
+
+
+</body>
+</html>
+
